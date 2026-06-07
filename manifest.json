@@ -1,0 +1,15 @@
+﻿{
+  "manifest_version": 3,
+  "name": "小米云相册快捷删除",
+  "version": "1.0.0",
+  "description": "为小米云相册添加快捷键删除照片功能",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://i.mi.com/gallery*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {}
+}
